@@ -1,0 +1,186 @@
+*{
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Karla", serif;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+}
+.title{
+    margin: 10px 0px;
+    color: #E0FFFF;
+}
+.main{
+    border: 6px solid black;
+    border-radius: 24px;
+    background-color:#212121;
+    overflow: hidden;
+}
+
+.name{
+    display: flex;
+    font-size:16px;
+    font-weight:700;
+    padding:8px 20px;
+    background-color: #1A1B1A;
+    align-items: center;
+    height:70px
+}
+.name span{
+    background-color: #1A1B1A;
+    color: #C1C0C0;
+}
+.arrow{
+    font-size: 20px;
+    opacity: 0.8;
+}
+.arrow:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.bhoot{
+    margin: 5px 5px 0px 5px;
+    font-size: 22px;
+}
+.dots{
+    height:30px;
+    width:30px;
+    text-align: center;
+    border-radius: 50%;
+    background-color:#373736 ;
+    color:#C1C0C0;
+    cursor: pointer;
+    
+}
+.dots i{
+    opacity: 0.7;;
+    padding-top: 6px;
+    font-size: 20px;
+}
+.dots i:hover{
+    opacity: 1;
+}
+.name-input{
+    
+    background-color: #1A1B1A;
+    color: #C1C0C0;
+    font-weight: 600;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.message-container{
+    display: flex;
+    flex-direction: column;
+    height:440px;
+    width:400px;
+    background-color:#212121df ;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #555 #222;
+   
+}
+.message-left,.message-right{
+    list-style: none;
+    padding:8px 16px;
+    margin: 10px 5px;
+    font-size:18px;
+    max-width: 250px;
+    word-wrap: break-word;
+    
+}
+.message-left{
+    border-radius: 20px 20px 20px 0;
+    align-self: flex-start;
+    background-color: #373736;
+    color: #C1C0C0;
+}
+.message-right{
+    border-radius: 20px 20px 0px 20px;
+    align-self: flex-end;
+    background-color: #86E57F;
+    font-weight: 400;
+}
+
+.message-left > p > span, .message-right > p > span{
+    display:block;
+    font-style: italic;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.feedback{
+    font-style: italic;
+    font-size: 14px;
+    padding: 10px 16px 16px 16px;
+    color: #9999FF;
+    text-align: center ;
+}
+
+.message-form{
+    display: flex;
+    justify-content: space-between;
+    width:400px;
+    margin-bottom: 20px;
+}
+.message-input{
+    flex-grow:1;
+    height:48px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    padding: 0 16px;
+    background-color: #333333;
+    margin: 0px 0px 10px 10px;
+    color: #888;
+}
+.message-input:hover{
+    box-shadow: 1px 1px 6 px #4CAF50 ;
+}
+
+.send-button{
+    font-size: 24px;
+    height:48px;
+    border: none;
+    padding:0px 20px;
+    outline:none;
+    background-color: #373736;
+    color:#dcdcd8;
+    cursor:pointer;
+    margin-right: 10px;
+    opacity: 0.7;
+}
+.send-button:hover{
+    opacity: 1;
+}
+.clients-total{
+    color: #C1C0C0;
+}
+
+/* WebKit (Chrome, Safari, Edge) */
+.message-container::-webkit-scrollbar {
+    width: 8px; /* Set scrollbar width */
+}
+
+.message-container::-webkit-scrollbar-thumb {
+    background: #555; /* Scroll handle color */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.message-container::-webkit-scrollbar-track {
+    background: #222; /* Track background */
+}
+
+.message-container::-webkit-scrollbar-thumb:hover {
+    background: #888; /* Lighter on hover */
+}
